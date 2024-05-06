@@ -1,9 +1,10 @@
 import React, { Fragment } from 'react'
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
     <Fragment>
-          <header className="position-fixed">
+      <header className="position-fixed">
         <div className="nav-top-parent d-flex justify-content-around align-items-center">
           <div className="message">
             <p className="mb-0" id="blink">
@@ -17,7 +18,9 @@ function Header() {
           </div>
         </div>
         <nav className="navbar navbar-expand-lg navbar-light">
-          <a className="navbar-brand" href="#"><img src="assets/image/WEBREAK.png" alt srcSet /></a>
+          <Link to="/" className="navbar-brand">
+            <img src="assets/image/WEBREAK.png" alt="Your alt text" />
+          </Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" />
           </button>
@@ -175,7 +178,7 @@ function Header() {
               <li><a href className="offers-link"> </a></li>
             </ul>
           </nav>
-        
+
         </section>
       </div>
     </Fragment>

@@ -1,4 +1,6 @@
 import React, { Fragment } from 'react'
+import { Link } from 'react-router-dom';
+
 
 
 function Footer() {
@@ -256,15 +258,16 @@ function Footer() {
                     </div>
                     <div id="hr_lastsection">
                         <div>
-                            <a href="#">TERMS &amp; CONDITIONS</a>
-                            <a href="#">SHIPPING POLICY</a>
-                            <a href="#">CANCELLATION POLICY</a>
-                            <a href="#">PRIVACY POLICY</a>
+                            <Link to="/termsandconditions">Terms & Conditions</Link>
+                            <Link to="/shipping">SHIPPING POLICY</Link>
+                            <Link to="/cancellationpolicy">Cancellation Policy</Link>
+                            <Link to="/privacy">PRIVACY POLICY</Link>
                         </div>
                         <div>
                             <p><span>©</span> Webreak All Rights Reserved</p>
                         </div>
                     </div>
+
                 </footer>
                 {/* Mobile Footer */}
                 <footer id="mobile_footer">
