@@ -139,7 +139,7 @@ function Footer() {
                                 <li><a href="#">CONTACT US</a></li>
                                 <li><a href="#">FREQUENTLY ASKED QUESTIONS</a></li>
                                 <li><a href="#">STORE LOCATOR</a></li>
-                                <li><a href="#">CANCELLATION &amp; RETURN</a></li>
+                                <Link to="/cancellationpolicy">CANCELLATION</Link>
                                 <li><a href="#">SHIPPING &amp; DELIVERY</a></li>
                             </ul>
                         </div>
@@ -147,9 +147,11 @@ function Footer() {
                             <ul>
                                 <li>INSPIRE ME</li>
                                 <li><a href="#">BEAUTY BOOK</a></li>
-                                <li><a href="#">TV</a></li>
+                                <li><a href="#">TELEVISION</a></li>
                                 <li><a href="#">NETWORK</a></li>
                                 <li><a href="#">BUYING GUIDES</a></li>
+                                <li><a href="#">SOCIAL MEDIA</a></li>
+
                             </ul>
                         </div>
                         <div className="hr_menu_container">
@@ -160,19 +162,17 @@ function Footer() {
                                 <li><a href="#">WEBREAK MAN</a></li>
                                 <li><a href="#">WEBREAK FASHION</a></li>
                                 <li><a href="#">WEBREAK PRO</a></li>
-                                <li><a href="#">WEBREAK FEMINA BEAUTY AWARDS WINNERS 2019</a></li>
                             </ul>
                         </div>
                         <div className="hr_menu_container">
                             <ul>
                                 <li>TOP CATEGORIES</li>
-                                <li><a href="#">MAKEUP</a></li>
-                                <li><a href="#">SKIN</a></li>
-                                <li><a href="#">HAIR</a></li>
-                                <li><a href="#">PERSONAL CARE</a></li>
-                                <li><a href="#">APPLIANCES</a></li>
-                                <li><a href="#">MOM AND BABY</a></li>
-                                <li><a href="#">WELLNESS</a></li>
+                                <li><a href="#">T-SHIRTS</a></li>
+                                <li><a href="#">BAGS</a></li>
+                                <li><a href="#">JEANS</a></li>
+                                <li><a href="#">CLOTHES</a></li>
+                                <li><a href="#">JACKETS</a></li>
+
                             </ul>
                         </div>
                     </div>

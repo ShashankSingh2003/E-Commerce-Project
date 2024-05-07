@@ -51,50 +51,19 @@ function Header() {
               <li className="nav-item">
                 <div className="dropdown">
                   <button className="dropbtn">
-                    Beauty Advice
+                    New Arrival
                     <i className="fa fa-caret-down" />
                   </button>
-                  <div className="dropdown-content">
-                    <div className="yt-video-container d-flex justify-content-around">
-                      <a rel="noopener noreferrer" href="/beauty-blog/" className="BeautyAdviceBox">
-                        <img src="https://adn-static2.nykaa.com/media/wysiwyg/beautybook_2img.jpg" />
-                        <div className="beautyadviceHeading">Beauty book</div>
-                        <div className="beautyadviceDescription">
-                          Webreak's Digital Magazine
-                        </div>
-                      </a>
-
-                      <a href="https://www.nykaa.com/nykaatv/?root=hdr_nykaatv" rel="noopener noreferrer" className="BeautyAdviceBox">
-                        <img src="https://adn-static2.nykaa.com/media/wysiwyg/megamenu/nykaatv_1_img.png" />
-                        <div className="beautyadviceHeading">Webreak TV</div>
-                        <div className="beautyadviceDescription">
-                          Masterclasses By Experts &amp; Vloggers
-                        </div>
-                      </a>
-
-                      <a href="/buying-guides" rel="noopener noreferrer" className="BeautyAdviceBox">
-                        <img src="https://images-static.naikaa.com/media/wysiwyg/2021/Buying-Guide-Mega-menu-new.jpg" />
-                        <div className="beautyadviceHeading">
-                          BEAUTY BUYING GUIDES
-                        </div>
-                        <div className="beautyadviceDescription">
-                          Tips To Explore While You Shop
-                        </div>
-                      </a>
-
-                    </div>
-                  </div>
                 </div>
               </li>
             </ul>
             <form className="form-inline my-2 my-lg-0 mr-lg-5 justify-content-center">
-              <div className="search_wrap position-relative">
-                <input className="form-control mr-sm-2" type="text" placeholder="Search on Webreak" aria-label="Search" id="search_products" />
-                <button type="button" className="btn btn-sm-1 btn-pink search-btn">
-                  <i className="bi bi-search"></i>
+              <div class="search_wrap position-relative">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search on Webreak" aria-label="Search" id="search_products" />
+                <button type="button" class="btn btn-sm-1 btn-pink search-btn">
+                  <i class="bi bi-search"></i>
                 </button>
-
-                <div id="search_suggestions" className="position-absolute w-100" />
+                <div id="search_suggestions" class="position-absolute w-100"></div>
               </div>
               <div className="dropdown">
                 <div className="d-flex align-items-center ml-3">

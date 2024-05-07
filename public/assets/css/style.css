@@ -93,6 +93,16 @@ header {
   text-decoration: none;
 }
 
+.nav-item:hover a{
+  background-color: #fc2779;
+  border-radius: 6px;
+}
+
+.nav-item:hover button{
+  background-color: #fc2779;
+  border-radius: 6px;
+}
+
 .navbar-mobile {
   display: none;
 }
@@ -102,21 +112,38 @@ header {
 }
 
 .btn-pink {
-  background-color: #fc2779;
   border: none;
-  color: white;
+  color: rgb(51, 50, 50);
   font-weight: 600;
   border-radius: 7px;
 }
 
 
 .sign-in-btn {
-  background-color: #fc2779;
+  background-color: hsl(337, 97%, 57%);
   border: none;
   color: white;
   font-weight: 600;
   border-radius: 7px;
 }
+
+.search_wrap {
+  position: relative;
+}
+
+.search_wrap input {
+  padding-left: 30px; /* Adjust this value according to the size of your icon */
+  background-image: url('path/to/your/search-icon.png'); /* Replace 'path/to/your/search-icon.png' with the actual path to your icon */
+  background-repeat: no-repeat;
+  background-position: 8px center; /* Adjust the position of the icon */
+  background-size: 16px; /* Adjust the size of the icon */
+}
+
+.search_wrap .search-btn {
+  position: absolute;
+ left: -3PX;
+}
+
 
 .navbar form a {
   font-size: 20px;
@@ -351,14 +378,14 @@ header {
   text-transform: capitalize;
   text-decoration: none;
   font-size: 15px;
-  color: #fc2779;
+  color: #fc146d;
   cursor: pointer;
   font-weight: 500    ;
 }
 
 .btm-nav a:hover {
   background-color: #fc4f91;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
 .offers-link {
