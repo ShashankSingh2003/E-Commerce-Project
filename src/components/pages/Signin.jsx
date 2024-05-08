@@ -21,7 +21,7 @@ function Signin() {
                         </div>
                         <form>
                             <div>
-                                <input name="emailMobile" defaultValue placeholder="Enter Email ID or Phone Number" id="email" />
+                                <input name="emailMobile" placeholder="Enter Email ID or Phone Number" id="email" />
                                 <svg xmlns="http://www.w3.org/2000/svg" width={16} height={13} viewBox="0 0 16 13">
                                     <title>success checkmark</title>
                                 </svg>

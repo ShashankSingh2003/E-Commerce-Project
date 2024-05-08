@@ -18,24 +18,33 @@ function Header() {
           </div>
         </div>
         <nav className="navbar navbar-expand-lg navbar-light">
-          <Link to="/" className="navbar-brand">
+          <Link to="/" className="navbar-brand" style={{ width: '120px'}}>
             <img src="assets/image/WEBREAK.png" alt="Your alt text" />
           </Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" />
           </button>
           <a href className="navbar-mobile">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb2giIwTplvj-xYY1zZtVl0nackoRA85gRpw&usqp=CAU" alt />
+            <img src="assets/image/WEBREAK.png" alt />
           </a>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto align-items-center">
               <li className="nav-item">
-                <a href>Categories</a>
+                <li className="nav-item">
+                  <Link to="/" className="nav-link" style={{ color: 'black' }} >Home</Link>
+                </li>
+              </li>
+              <li className="nav-item">
+                <div className="dropdown">
+                  <Link to="/shop" className="dropbtn">
+                    Shop <i className="fa fa-caret-down" />
+                  </Link>
+                </div>
               </li>
               <li className="nav-item">
                 <div className="dropdown">
                   <button className="dropbtn">
-                    Brands
+                    About
                     <i className="fa fa-caret-down" />
                   </button>
                 </div>
@@ -43,15 +52,7 @@ function Header() {
               <li className="nav-item">
                 <div className="dropdown">
                   <button className="dropbtn">
-                    Fashion
-                    <i className="fa fa-caret-down" />
-                  </button>
-                </div>
-              </li>
-              <li className="nav-item">
-                <div className="dropdown">
-                  <button className="dropbtn">
-                    New Arrival
+                    Contacts
                     <i className="fa fa-caret-down" />
                   </button>
                 </div>
@@ -81,10 +82,10 @@ function Header() {
                       </p>
                     </div>
                     <div className="sign_in_options text-center">
-                      <a href="signup.html" className="d-flex ml-1 align-items-center justify-content-between">
+                      <Link to="/signin" className="d-flex ml-1 align-items-center justify-content-between">
                         <p className="w-75 text-center">Sign in with Mobile / Email</p>
                         <i className="bi bi-arrow-right ml-4" />
-                      </a>
+                      </Link>
                       <a href className="d-flex align-items-center justify-content-between">
                         <p className="text-center">
                           <img src="https://static.wixstatic.com/media/2cd43b_4c865a6338cd460b8f88f375e1b596c3~mv2.png/v1/fill/w_320,h_320,q_90/2cd43b_4c865a6338cd460b8f88f375e1b596c3~mv2.png" alt className="mr-2" />Google
@@ -104,9 +105,10 @@ function Header() {
                   </div>
                 </div>
               </div>
-              <a href="#" className="ml-5 position-relative" id="cart_icon"><i className="bi bi-bag" /><span id="cart_counter">0</span>
+              <a href="#" className="ml-3 position-relative" id="cart_icon"><i className="bi bi-bag" /><span id="cart_counter">0</span>
               </a>
             </form>
+
 
 
           </div>
@@ -133,16 +135,17 @@ function Header() {
         </section>
         <div className="pt-5 lg-rem" />
         <div className="pt-5" />
+
         {/* HERO SECTION */}
         <section className="hero-section" id="hero">
           <nav className="btm-nav pb-1">
             <ul className="d-flex justify-content-between" style={{ listStyle: 'none' }}>
-              <li><a href>T-Shirts</a></li>
-              <li><a href>Bags</a></li>
-              <li><a href>Jeans</a></li>
-              <li><a href>Shirts</a></li>
-              <li><a href>Clothes</a></li>
-              <li><a href>Jackets</a></li>
+              <Link to="/tshirt" >T-Shirt</Link>
+              <Link to="/bag" >Bags</Link>
+              <Link to="/jense" >Jense</Link>
+              <Link to="/shirt" >Shirt</Link>
+              <Link to="/jacket" >Jacket</Link>
+            
 
               <li><a href className="offers-link"> </a></li>
             </ul>

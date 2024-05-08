@@ -1,73 +1,43 @@
 import React, { Fragment, useEffect } from 'react'
-import Header from './Header';
-import Footer from './Footer';
+import Header from '../pages/Header';
+import Footer from '../pages/Footer';
 
-function Shop() {
+function Tshirt() {
 
-  useEffect(() => {
-    // JavaScript code
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-
-    // Function for Default disabling of accordion 
-    disableAccordion();
-
-    function disableAccordion() {
-      for (i = 0; i < acc.length; i++) {
-        var panel = acc[i].nextElementSibling;
-        panel.style.display = "none";
-      }
-    }
-
-    // Function for Enabling disabling on click accordion    
-
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-          panel.style.display = "none";
-        } else {
-          panel.style.display = "block";
+    useEffect(() => {
+        // JavaScript code
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+    
+        // Function for Default disabling of accordion 
+        disableAccordion();
+    
+        function disableAccordion() {
+          for (i = 0; i < acc.length; i++) {
+            var panel = acc[i].nextElementSibling;
+            panel.style.display = "none";
+          }
         }
-      });
-    }
-  }, []);
+    
+        // Function for Enabling disabling on click accordion    
+    
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+      }, []);
   return (
     <Fragment>
-      <Header />
-      <div id="face-primer-page-ID">
-        <h1 className="centerText productPageTitleFont" id="page-title-name-ID">Shop  </h1>
-        <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
-          <ol className="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to={0} className="active" />
-            <li data-target="#carouselExampleIndicators" data-slide-to={1} />
-            <li data-target="#carouselExampleIndicators" data-slide-to={2} />
-          </ol>
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img className="d-block w-100 changeIMG1 " src="https://images-static.nykaa.com/uploads/3c9e27f1-705d-4d5a-8ec3-c9c3c28dc9e3.jpg?tr=w-1200,cm-pad_resize" alt="First slide" />
-            </div>
-            <div className="carousel-item">
-              <img className="d-block w-100 changeIMG2" src="https://images-static.nykaa.com/uploads/388338e8-81fc-4f05-aab3-84c2b38265ea.jpg?tr=w-2400,cm-pad_resize" alt="Second slide" />
-            </div>
-            <div className="carousel-item">
-              <img className="d-block w-100 changeIMG3" src="https://images-static.nykaa.com/uploads/67dc1a42-52d5-4f03-b7eb-ce1e35bf6594.jpg?tr=w-2400,cm-pad_resize" alt="Third slide" />
-            </div>
-            <div className="carousel-item">
-              <img className="d-block w-100" src="https://images-static.nykaa.com/uploads/fe975d47-3792-4599-978f-ee185ef9f114.jpg?tr=w-1200,cm-pad_resize" alt="Fourth slide" />
-            </div>
-          </div>
-          <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true" />
-            <span className="sr-only">Previous</span>
-          </a>
-          <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true" />
-            <span className="sr-only">Next</span>
-          </a>
-        </div>
-        <h1 className="centerText productPageTitleFont" id="title-listing"> All Products</h1>
+    <Header/>
+   
+        <h1 className="centerText productPageTitleFont" id="title-listing"> T-Shirts</h1>
         <div className="showFLEX" id="face-primer-middle-div-ID">
           {/* sidebar html and js present HERE  */}
           <div id="face-primer-sidebar-ID">
@@ -237,9 +207,9 @@ function Shop() {
                   <li id="keyword-li-ID" className='text-center'>FEATURED BESTSELLER</li>
                 </ul>
               </div>
-              <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/c/d/cd0f1fb4710032517839_1.jpg" alt="Neutrogena Hydro Boost Water Gel" />
-              <h5>Neutrogena Hydro Boost Water Gel</h5>
-              <div class="price-Box-div-CLASS"><p>MRP: </p><p>₹450</p><p>-Infinity%</p></div>
+              <img src="/assets/image/productimage/Red.jpg" />
+              <h5>T-Shirt</h5>
+              <div class="price-Box-div-CLASS"><p>MRP: </p><p>₹450</p><p>-25%</p></div>
               <div id="extra-discount-div-ID"><p></p></div><h2 class="rating-box-h2-CLASS"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></h2><div id="hoverCartSlide-ID"><button id="wishlist-button-ID"><img src="https://lh3.googleusercontent.com/drive-viewer/AFDK6gPrOYtFM7-C2NztwjjdjAnDYq8gLLhv6ciZ9ElkfqO9mg8TJWfKTLiRJaplG_yceF39QJUyL3cwFVRlB0Ri1nktX5z7xA=w1960-h1810" /></button><button id="add-to-cart-button-ID">Add To Bag</button></div>
             </div>
 
@@ -250,9 +220,9 @@ function Shop() {
                   <li id="keyword-li-ID" className='text-center'>FEATURED BESTSELLER</li>
                 </ul>
               </div>
-              <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/1/d/1de91fbDOTKE00000164-1.jpg" alt="Dot &amp; Key Cica Niacinamide Night Gel With Tea Tree Oil, Figh..."/>
-              <h5>Neutrogena Hydro Boost Water Gel</h5>
-              <div class="price-Box-div-CLASS"><p>MRP: </p><p>₹450</p><p>-Infinity%</p></div>
+              <img src="/assets/image/productimage/Green.jpg"/>
+              <h5>T-Shirt</h5>
+              <div class="price-Box-div-CLASS"><p>MRP: </p><p>₹450</p><p>-25%</p></div>
               <div id="extra-discount-div-ID"><p></p></div><h2 class="rating-box-h2-CLASS"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></h2><div id="hoverCartSlide-ID"><button id="wishlist-button-ID"><img src="https://lh3.googleusercontent.com/drive-viewer/AFDK6gPrOYtFM7-C2NztwjjdjAnDYq8gLLhv6ciZ9ElkfqO9mg8TJWfKTLiRJaplG_yceF39QJUyL3cwFVRlB0Ri1nktX5z7xA=w1960-h1810" /></button><button id="add-to-cart-button-ID">Add To Bag</button></div>
             </div>
 
@@ -263,9 +233,9 @@ function Shop() {
                   <li id="keyword-li-ID" className='text-center'>FEATURED BESTSELLER</li>
                 </ul>
               </div>
-              <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/f/9/f9441e58906009450070_1.jpg" alt="Biotique Morning Nectar Nourish &amp; Hydrate Moisturizer"/>
-              <h5>Neutrogena Hydro Boost Water Gel</h5>
-              <div class="price-Box-div-CLASS"><p>MRP: </p><p>₹450</p><p>-Infinity%</p></div>
+              <img src="/assets/image/productimage/Black.jpg"/>
+              <h5>T-Shirt</h5>
+              <div class="price-Box-div-CLASS"><p>MRP: </p><p>₹450</p><p>-25%</p></div>
               <div id="extra-discount-div-ID"><p></p></div><h2 class="rating-box-h2-CLASS"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></h2><div id="hoverCartSlide-ID"><button id="wishlist-button-ID"><img src="https://lh3.googleusercontent.com/drive-viewer/AFDK6gPrOYtFM7-C2NztwjjdjAnDYq8gLLhv6ciZ9ElkfqO9mg8TJWfKTLiRJaplG_yceF39QJUyL3cwFVRlB0Ri1nktX5z7xA=w1960-h1810" /></button><button id="add-to-cart-button-ID">Add To Bag</button></div>
             </div>
             
@@ -273,16 +243,10 @@ function Shop() {
           </div>
           
 
-
-
         </div>
-
-      </div>
-      {/* Rest making through JS */}
-
-      <Footer />
-
+        <Footer/>
     </Fragment>
   )
 }
-export default Shop;
+
+export default Tshirt;

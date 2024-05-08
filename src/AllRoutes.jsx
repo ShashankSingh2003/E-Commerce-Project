@@ -3,7 +3,13 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import Home from './components/pages/Home';
 import Signin from './components/pages/Signin';
 import Register from './components/pages/Register';
-import Product from './components/products/Product';
+import Shop from './components/pages/Shop';
+import Product from './components/pages/Product';
+import Tshirt from './components/products/Tshirt';
+import Bags from './components/products/Bags';
+import Jense from './components/products/Jense';
+import Shirt from './components/products/Shirt';
+import Jacket from './components/products/Jacket';
 import Profile from './components/pages/Profile';
 import MyWish from './components/pages/MyWish';
 import Otp from './components/pages/Otp';
@@ -33,7 +39,13 @@ function AllRoutes() {
           <Route path='/signin' element={<Signin />} />
           <Route path='/register' element={<Register />} />
           <Route path='/profile' element={<Profile />} />
-          <Route path='/product' element={<Product />} />
+          <Route path='/shop' element={<Shop />} />
+          <Route path='/product' element={<Product />} />☻
+          <Route path='/tshirt' element={<Tshirt />} />
+          <Route path='/bag' element={<Bags />} />
+          <Route path='/jense' element={<Jense />}/>
+          <Route path='/shirt' element={<Shirt />}/>
+          <Route path='/jacket' element={<Jacket />}/>
           <Route path='/mywish' element={<MyWish />} />
           <Route path='/otp' element={<Otp />} />
           <Route path='/termsandconditions' element={<Termsandconditions />} />

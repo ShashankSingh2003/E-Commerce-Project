@@ -89,7 +89,7 @@ header {
 
 .navbar button:hover,
 .navbar a:hover {
-  color: #0f0409;
+  color: #0f0409!important;
   text-decoration: none;
 }
 
@@ -369,6 +369,7 @@ header {
 /* Bottom navbar */
 .btm-nav {
   padding: 0 8%;
+  margin-top: 2.5%;
   padding-top: 2.5%;
   background-color: white;
   border-bottom: 1px solid rgb(185, 181, 181);
