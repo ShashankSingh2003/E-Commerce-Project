@@ -1,7 +1,14 @@
-import React, { Fragment } from 'react'
+import React, { Fragment , useState  } from 'react'
 import { Link } from 'react-router-dom';
 
 function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
+
   return (
     <Fragment>
       <header className="position-fixed">
@@ -18,7 +25,7 @@ function Header() {
           </div>
         </div>
         <nav className="navbar navbar-expand-lg navbar-light">
-          <Link to="/" className="navbar-brand" style={{ width: '120px'}}>
+          <Link to="/" className="navbar-brand" style={{ width: '120px' }}>
             <img src="assets/image/WEBREAK.png" alt="Your alt text" />
           </Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,29 +41,31 @@ function Header() {
                   <Link to="/" className="nav-link" style={{ color: 'black' }} >Home</Link>
                 </li>
               </li>
+              <ul className="nav">
+                <li className={`nav-item dropdown ${isOpen ? 'show' : ''}`}>
+                  <a className="nav-link" href="#" id="navbarDropdown" style={{ color: 'black' }} onClick={toggleDropdown}>
+                    Shop
+                  </a>
+                  <ul className={`dropdown-menu ${isOpen ? 'show' : ''}`}>
+                    <li><Link to="/tshirt" className="dropdown-item" onClick={toggleDropdown}>T-Shirt</Link></li>
+                    <li><Link to="/bag" className="dropdown-item" onClick={toggleDropdown}>Bags</Link></li>
+                    <li><Link to="/jense" className="dropdown-item" onClick={toggleDropdown}>Jeans</Link></li>
+                    <li><Link to="/shirt" className="dropdown-item" onClick={toggleDropdown}>Shirt</Link></li>
+                    <li><Link to="/jacket" className="dropdown-item" onClick={toggleDropdown}>Jacket</Link></li>
+                  </ul>
+                </li>
+              </ul>
               <li className="nav-item">
-                <div className="dropdown">
-                  <Link to="/shop" className="dropbtn">
-                    Shop <i className="fa fa-caret-down" />
-                  </Link>
-                </div>
+                <li className="nav-item">
+                  <Link to="/about" className="nav-link" style={{ color: 'black' }} >About</Link>
+                </li>
               </li>
               <li className="nav-item">
-                <div className="dropdown">
-                  <button className="dropbtn">
-                    About
-                    <i className="fa fa-caret-down" />
-                  </button>
-                </div>
+                <li className="nav-item">
+                  <Link to="/contacts" className="nav-link" style={{ color: 'black' }} >Contact</Link>
+                </li>
               </li>
-              <li className="nav-item">
-                <div className="dropdown">
-                  <button className="dropbtn">
-                    Contacts
-                    <i className="fa fa-caret-down" />
-                  </button>
-                </div>
-              </li>
+
             </ul>
             <form className="form-inline my-2 my-lg-0 mr-lg-5 justify-content-center">
               <div class="search_wrap position-relative">
@@ -145,7 +154,7 @@ function Header() {
               <Link to="/jense" >Jense</Link>
               <Link to="/shirt" >Shirt</Link>
               <Link to="/jacket" >Jacket</Link>
-            
+
 
               <li><a href className="offers-link"> </a></li>
             </ul>

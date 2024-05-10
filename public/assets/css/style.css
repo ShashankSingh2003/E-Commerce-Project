@@ -141,7 +141,8 @@ header {
 
 .search_wrap .search-btn {
   position: absolute;
- left: -3PX;
+ left: -8PX;
+ top: -4px;
 }
 
 
@@ -234,6 +235,16 @@ header {
   padding: 10px;
   overflow: hidden;
 }
+
+.dropdown-menu {
+  display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
 
 .sign-in-content {
   left: -8vw;
@@ -369,7 +380,7 @@ header {
 /* Bottom navbar */
 .btm-nav {
   padding: 0 8%;
-  margin-top: 2.5%;
+  margin-top: 2.3%;
   padding-top: 2.5%;
   background-color: white;
   border-bottom: 1px solid rgb(185, 181, 181);

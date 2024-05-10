@@ -12,6 +12,8 @@ import Shirt from './components/products/Shirt';
 import Jacket from './components/products/Jacket';
 import Profile from './components/pages/Profile';
 import MyWish from './components/pages/MyWish';
+import About from './components/pages/About';
+import Contacts from './components/pages/Contacts';
 import Otp from './components/pages/Otp';
 import Privacy from './components/Footer/Privacy';
 import Shipping from './components/Footer/Shipping';
@@ -40,13 +42,15 @@ function AllRoutes() {
           <Route path='/register' element={<Register />} />
           <Route path='/profile' element={<Profile />} />
           <Route path='/shop' element={<Shop />} />
-          <Route path='/product' element={<Product />} />☻
+          <Route path='/product' element={<Product />} />
           <Route path='/tshirt' element={<Tshirt />} />
           <Route path='/bag' element={<Bags />} />
-          <Route path='/jense' element={<Jense />}/>
-          <Route path='/shirt' element={<Shirt />}/>
-          <Route path='/jacket' element={<Jacket />}/>
+          <Route path='/jense' element={<Jense />} />
+          <Route path='/shirt' element={<Shirt />} />
+          <Route path='/jacket' element={<Jacket />} />
           <Route path='/mywish' element={<MyWish />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contacts' element={<Contacts />} />
           <Route path='/otp' element={<Otp />} />
           <Route path='/termsandconditions' element={<Termsandconditions />} />
           <Route path='/shipping' element={<Shipping />} />
