@@ -1,14 +1,7 @@
-import React, { Fragment , useState  } from 'react'
+import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom';
 
 function Header() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
-
-
   return (
     <Fragment>
       <header className="position-fixed">
@@ -42,17 +35,8 @@ function Header() {
                 </li>
               </li>
               <ul className="nav">
-                <li className={`nav-item dropdown ${isOpen ? 'show' : ''}`}>
-                  <a className="nav-link" href="#" id="navbarDropdown" style={{ color: 'black' }} onClick={toggleDropdown}>
-                    Shop
-                  </a>
-                  <ul className={`dropdown-menu ${isOpen ? 'show' : ''}`}>
-                    <li><Link to="/tshirt" className="dropdown-item" onClick={toggleDropdown}>T-Shirt</Link></li>
-                    <li><Link to="/bag" className="dropdown-item" onClick={toggleDropdown}>Bags</Link></li>
-                    <li><Link to="/jense" className="dropdown-item" onClick={toggleDropdown}>Jeans</Link></li>
-                    <li><Link to="/shirt" className="dropdown-item" onClick={toggleDropdown}>Shirt</Link></li>
-                    <li><Link to="/jacket" className="dropdown-item" onClick={toggleDropdown}>Jacket</Link></li>
-                  </ul>
+              <li className="nav-item">
+                  <Link to="/shop" className="nav-link" style={{ color: 'black' }} >Shop</Link>
                 </li>
               </ul>
               <li className="nav-item">
