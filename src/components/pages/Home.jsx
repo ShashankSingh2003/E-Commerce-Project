@@ -5,7 +5,7 @@ import Footer from './Footer';
 function Home() {
   return (
     <fragment>
-      <Header />
+      <Header />                    
       <div>
         {/* Carousel 1 */}
         <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">

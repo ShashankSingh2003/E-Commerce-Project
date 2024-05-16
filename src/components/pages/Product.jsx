@@ -1,29 +1,46 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 function Product() {
-  return (
-    <Fragment>
-        <Header/>
-           <section id="product_display">
+
+    const { productId } = useParams();
+    const [product, setProduct] = useState(null);
+
+    useEffect(() => {
+        // Fetch product details using productId
+        fetch(`http://localhost:3000/api/product/${productId}`)
+            .then(response => response.json())
+            .then(data => {
+                setProduct(data);
+                console.log('Product:', data); // Print product data to console
+            })
+            .catch(error => console.error('Error fetching product:', error));
+    }, [productId]);
+
+    return (
+        <Fragment>
+            <Header />
+            <section id="product_display">
                 <div id="product_details_wrapper" className="d-sm-block d-md-flex">
                     <div className="img_container">
                         <div className="w-100 pr-4 d-flex justify-content-end">
                             <i className="bi bi-heart" />
                         </div>
                         <div id="product_img">
-                            {/* Image will append here  */}
+                            {product ? <img src={product.img_url} alt="Product" /> : <img src="default_image.jpg" alt="Default Product" />}
                         </div>
+
                     </div>
                     <div id="product_details">
                         <h4 id="product_name">
-                            {/* product name will append here  */}
+                            {product ? product.prodname : "Loading..."}
                         </h4>
                         <p>MRP: <span id="str_price">
-                            {/* Striked Through price append here */}
+                            {product ? product.str_price : "Loading..."}
                         </span>
                             <span id="price">
-                                {/* Normal price will append here */}
+                                {product ? product.price : "Loading..."}
                             </span>
                         </p><p>inclusive of all taxes</p>
                         <p />
@@ -58,9 +75,9 @@ function Product() {
                     </div>
                 </div>
             </section>
-            <Footer/>
-    </Fragment>
-  )
+            <Footer />
+        </Fragment>
+    )
 }
 
 export default Product;

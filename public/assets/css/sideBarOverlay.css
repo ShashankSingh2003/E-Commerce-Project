@@ -1,0 +1,226 @@
+.bi-bag {
+    font-size: 27px;
+}
+
+#bag_section {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: none;
+    z-index: 16;
+}
+
+#bag_section_overlay {
+    height: 100vh;
+    width: 70%;
+    background: black;
+    opacity: 0.5;
+}
+
+#bag_items_display {
+    width: 30%;
+    height: 100vh;
+    background: white;
+}
+
+.bag_section_overlay_head {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #a3a2a2;
+    padding: 0 20px;
+}
+
+.bi-arrow-left {
+    font-weight: bold;
+    font-size: 33px;
+}
+
+#bag_section h5 {
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+#products_cart_list {
+    overflow-y: scroll;
+    height: 66%;
+}
+
+/* <!-- For this page I using INLINE CSS ONLY --> */
+
+#address-page-parent-box-ID {
+    display: flex;
+    flex-direction: column;
+    padding-left: 162px;
+    padding-right: 162px;
+    position: relative;
+    margin-top: 21px;
+    height: calc(100vh - 65px);
+    font-family: Inter, sans-serif;
+}
+
+#first-main-div-choose-address-ID {
+    display: flex;
+    justify-content: space-between;
+    margin: 7% 3%;
+    font-family: Inter, sans-serif;
+}
+
+#first-main-div-choose-address-ID>div p:first-child {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 40px;
+    color: rgba(0, 19, 37, 0.92);
+    margin: 0px;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* #first-main-div-choose-address-ID>div+div {} */
+
+#first-main-div-choose-address-ID>div p:nth-child(2) {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(0, 19, 37, 0.64);
+    margin: 0px;
+    -webkit-font-smoothing: antialiased;
+}
+
+#second-main-div-choose-address-ID {
+    display: flex;
+}
+
+#add-new-address-ID {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border: 1px dashed rgba(0, 19, 37, 0.16);
+    border-radius: 8px;
+    min-width: 326px;
+    min-height: 148px;
+    flex-basis: 50%;
+    margin-bottom: 14px;
+    padding: 24px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.user-cart-details-CLASS {
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+
+    right: 11%;
+    width: 22%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: rgba(0, 19, 37, 0.92);
+    margin: 0px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.bag-quantity-CLASS {
+    display: flex;
+    padding: 16px 0px;
+    -webkit-box-pack: center;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: rgb(255, 115, 0); */
+}
+
+.bag-price-details-CLASS {
+    display: flex;
+    padding: 8px 0px;
+    -webkit-box-pack: center;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: aqua; */
+
+}
+
+.nykaa-trust-payment-CLASS {
+    padding: 12px 17px;
+    background: rgb(249, 250, 250);
+    border-radius: 8px;
+    margin-top: 12px;
+    display: flex;
+}
+
+.nykaa-trust-payment-CLASS p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: rgba(0, 19, 37, 0.92);
+    margin: 0px;
+    -webkit-font-smoothing: antialiased;
+}
+
+#ship-to-address-div-ID {
+    padding: 12px 24px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0 19 37 / 16%) 0px 1px 0px inset;
+    position: fixed;
+    min-width: 392px;
+    box-sizing: border-box;
+    bottom: 0px;
+    align-items: center;
+    display: flex;
+}
+
+#ship-to-address-button-ID {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 12px;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    border-color: rgb(232, 0, 113);
+    background-color: rgb(232, 0, 113);
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    width: auto;
+}
+
+.address-first-div-CLASS {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+
+.address-second-div-CLASS {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+
+#my-address-form>div>input {
+    background: rgb(243, 244, 245);
+    border-top-color: initial;
+    border-left-color: initial;
+    border-bottom-color: rgba(0, 19, 37, 0.16);
+    color: rgba(0, 19, 37, 0.92);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0px;
+    outline: 0px;
+    padding: 20px 12px 5px;
+    transition: border-color 0.2s ease 0s;
+    width: 100%;
+    caret-color: rgb(232, 0, 113);
+    margin-bottom: 8%;
+    align-items: center;
+}
